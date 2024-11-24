@@ -322,6 +322,20 @@
 #  define ILI9341_TEARING       0
 #endif  /*USE_ILI9341*/
 
+/*-------------------------------------------------
+ *  ILI9488 320X480 TFT LCD
+ *------------------------------------------------*/
+#ifndef USE_ILI9488
+#  define USE_ILI9488       0
+#endif
+
+#if USE_ILI9488
+#  define ILI9488_HOR_RES       LV_HOR_RES
+#  define ILI9488_VER_RES       LV_VER_RES
+#  define ILI9488_GAMMA         1
+#  define ILI9488_TEARING       0
+#endif  /*USE_ILI9488*/
+
 /*-----------------------------------------
  *  Linux frame buffer device (/dev/fbx)
  *-----------------------------------------*/
